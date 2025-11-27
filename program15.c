@@ -14,7 +14,7 @@ int main() {
         for (j = 0; j < n; j++) {
             scanf("%d", &cost[i][j]);
             if (cost[i][j] == 0)
-                cost[i][j] = 999;  // treat 0 as infinity
+                cost[i][j] = 999;  
         }
     }
 
