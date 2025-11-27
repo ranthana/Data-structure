@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define MAX_VERTICES 100
 struct Graph {
-int V; // Number of vertices
+int V; 
 int adj[MAX_VERTICES][MAX_VERTICES];
 int in_degree[MAX_VERTICES];
 };
@@ -17,8 +17,8 @@ graph->in_degree[i] = 0;
 }
 }
 void addEdge(struct Graph* graph, int u, int v) {
-graph->adj[u][v] = 1; // Add edge from u to v
-graph->in_degree[v]++; // Increment in-degree of vertex v
+graph->adj[u][v] = 1; 
+graph->in_degree[v]++; 
 }
 void topologicalSort(struct Graph* graph) {
 int V = graph->V;
